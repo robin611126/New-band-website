@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone } from "lucide-react";
@@ -52,14 +53,24 @@ export const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           {/* Logo Section */}
-          <Link href="/" className="group flex flex-col items-start z-[60]">
-            <span className="font-serif text-gold text-xl md:text-2xl tracking-widest relative">
-              SRI THYAGARAJA
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full" />
-            </span>
-            <span className="font-sans text-ivory/70 text-[9px] md:text-[10px] tracking-[0.3em] uppercase mt-1">
-              Nadaswara Brundam
-            </span>
+          <Link href="/" className="group flex items-center gap-3 md:gap-4 z-[60]">
+            <Image 
+              src="/logo.png" 
+              alt="Sri Thyagaraja Nadaswara Brundam Logo" 
+              width={90} 
+              height={90} 
+              className="w-16 md:w-20 h-auto object-contain drop-shadow-lg"
+              priority
+            />
+            <div className="flex flex-col items-start">
+              <span className="font-serif text-gold text-sm md:text-xl tracking-widest relative">
+                SRI THYAGARAJA
+                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-gold transition-all duration-300 group-hover:w-full" />
+              </span>
+              <span className="font-sans text-ivory/70 text-[7px] md:text-[9px] tracking-[0.3em] uppercase mt-0.5 md:mt-1">
+                Nadaswara Brundam
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -135,9 +146,18 @@ export const Navbar = () => {
 
               {/* Header area */}
               <div className="px-8 pt-8 pb-6 border-b border-gold/10 flex items-center justify-between">
-                <div>
-                  <span className="font-serif text-gold text-lg tracking-widest block">SRI THYAGARAJA</span>
-                  <span className="font-sans text-ivory/50 text-[9px] tracking-[0.3em] uppercase mt-1 block">Nadaswara Brundam</span>
+                <div className="flex items-center gap-3">
+                  <Image 
+                    src="/logo.png" 
+                    alt="Sri Thyagaraja Nadaswara Brundam Logo" 
+                    width={60} 
+                    height={60} 
+                    className="w-14 h-auto object-contain"
+                  />
+                  <div className="flex flex-col">
+                    <span className="font-serif text-gold text-sm tracking-widest block">SRI THYAGARAJA</span>
+                    <span className="font-sans text-ivory/50 text-[7px] tracking-[0.3em] uppercase mt-0.5 block">Nadaswara Brundam</span>
+                  </div>
                 </div>
                 <motion.button
                   onClick={() => setIsOpen(false)}
