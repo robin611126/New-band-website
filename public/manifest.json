@@ -1,0 +1,25 @@
+{
+  "name": "Sri Thyagaraja Nadaswara Brundam",
+  "short_name": "Nadaswaram",
+  "description": "Authentic Sannai Melam (Nadaswaram) and Thavil performances for Telugu weddings and temple festivals.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#C6A75E",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["music", "entertainment", "lifestyle"]
+}
