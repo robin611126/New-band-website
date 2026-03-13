@@ -159,6 +159,8 @@ const serviceSchema = {
   }
 };
 
+import { Analytics } from "@vercel/analytics/next";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -189,6 +191,7 @@ export default function RootLayout({
           </SmoothScroll>
           <FloatingCTA />
         </GlobalLoader>
+        <Analytics />
       </body>
     </html>
   );
