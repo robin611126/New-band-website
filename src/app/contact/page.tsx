@@ -67,17 +67,7 @@ export default function ContactPage() {
               </div>
             </a>
 
-            <a href="mailto:karthikraghavendra1@gmail.com" className="group flex items-start gap-6">
-              <div className="w-14 h-14 rounded-full border border-gold/30 flex items-center justify-center text-gold group-hover:bg-gold group-hover:text-charcoal transition-all duration-300">
-                <Mail size={24} />
-              </div>
-              <div className="flex flex-col pt-1">
-                <span className="text-ivory/50 uppercase tracking-widest text-xs mb-1 font-bold">Email Enquiry</span>
-                <span className="font-serif text-xl text-ivory group-hover:text-gold transition-colors break-all">
-                  karthikraghavendra1@gmail.com
-                </span>
-              </div>
-            </a>
+
 
             <div className="group flex items-start gap-6">
               <div className="w-14 h-14 rounded-full border border-gold/30 flex items-center justify-center text-gold">

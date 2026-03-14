@@ -80,15 +80,7 @@ export const Footer = () => {
                   </span>
                   <span className="tracking-wider">+91 93911 45321</span>
                 </a>
-                <a 
-                  href="mailto:karthikraghavendra1@gmail.com" 
-                  className="flex items-center gap-2.5 text-ivory/60 hover:text-gold transition-colors duration-300 text-[13px] md:text-sm group"
-                >
-                  <span className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gold/20 group-hover:border-gold/50 group-hover:bg-gold/10 flex items-center justify-center transition-all duration-300 shrink-0">
-                    <Mail size={13} className="text-gold" />
-                  </span>
-                  <span className="tracking-wider break-all">karthikraghavendra1@gmail.com</span>
-                </a>
+
                 <div className="flex items-center gap-2.5 text-ivory/60 text-[13px] md:text-sm">
                   <span className="w-8 h-8 md:w-10 md:h-10 rounded-full border border-gold/20 flex items-center justify-center shrink-0">
                     <MapPin size={13} className="text-gold" />
