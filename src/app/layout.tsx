@@ -5,7 +5,7 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { Navbar } from "@/components/Navbar";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { CustomCursor } from "@/components/CustomCursor";
-import { PaymentPopup } from "@/components/PaymentPopup";
+
 
 const inter = Inter({
   variable: "--font-inter",
@@ -184,7 +184,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} antialiased bg-charcoal text-ivory selection:bg-gold selection:text-charcoal`}>
-        <PaymentPopup />
+
         <GlobalLoader>
           <CustomCursor />
           <SmoothScroll>
